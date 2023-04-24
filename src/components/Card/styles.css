@@ -1,0 +1,43 @@
+
+  
+  .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+    margin-bottom: 50px;
+    background-color: #16181c;
+  }
+  
+  .container {
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap: 80px;
+  }
+  
+  .user-img {
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .text-content .tweet {
+    width: 80%;
+  }
+
+@media (max-width: 1024px) {
+
+}
