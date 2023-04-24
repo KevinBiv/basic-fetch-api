@@ -40,4 +40,25 @@
 
 @media (max-width: 1024px) {
 
+    .card {
+        min-width: 300px;
+        max-width: 500px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 30px;
+    }
+
+    .user-img {
+        border-radius: 10px;
+        background-color: red;
+        width: 100%;
+    }
+
+    .text-content .tweet {
+        width: 95%;
+    }
 }

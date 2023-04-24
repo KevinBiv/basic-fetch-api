@@ -1,8 +1,16 @@
 import React from "react";
 import "./styles.css";
-import reactLogo from "../../assets/react.svg";
+// import reactLogo from "../../assets/react.svg";
 
-function Card({ image, name, tweet, date }) {
+interface CardProps {
+  key: number,
+  image: string,
+  name: string,
+  tweet: string,
+  date: string
+}
+
+function Card({ image, name, tweet, date }: CardProps) {
   return (
     <div className="card">
       <div className="container">

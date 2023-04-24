@@ -1,11 +1,17 @@
+import * as React from "react";
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./components/Card";
 
+interface Tweet {
+  profilePic: string,
+  name: string,
+  tweet: string,
+  date: string
+}
+
 function App() {
-  const [tweets, setTweets] = useState([]);
+  const [tweets, setTweets] = useState<Tweet[]>([]);
 
   useEffect(() => {
     const fetchTweets = async () => {
@@ -24,7 +30,7 @@ function App() {
 
   return (
     <div className="app">
-      {tweets.map((tweet) => {
+      {tweets.map((tweet: Tweet) => {
         const date = new Date(tweet.date);
         const formattedDate = `${date.getFullYear()}-${
           date.getMonth() + 1
